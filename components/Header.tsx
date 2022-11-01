@@ -3,6 +3,7 @@ import {useAddress, useDisconnect, useMetamask} from "@thirdweb-dev/react"
 import Link from 'next/link'
 import {BellIcon, ShoppingCartIcon, ChevronDownIcon, MagnifyingGlassIcon} from "@heroicons/react/24/outline"
 import Image from 'next/image'
+import { Router, useRouter } from 'next/router'
 
 type Props = {}
 
@@ -11,6 +12,7 @@ function Header({}: Props) {
   const connectWithMetamask = useMetamask()
   const disconnect = useDisconnect()
   const address = useAddress()
+  const router = useRouter()
 
     return (
     <div className="max-w-6xl mx-auto p-2">
@@ -71,7 +73,7 @@ function Header({}: Props) {
         </div>
 
         <button className="hidden sm:inline bg-blue-600 text-white px-5 md:px-10 py-2 border-2 border-blue-600">Search</button>
-        <Link href="/">
+        <Link href="/create">
           <button className="border-2 border-blue-600 px-5 md:px-10 truncate py-2 hover:bg-blue-600/50 hover:text-white cursor-pointer">List Item</button>
         </Link>
         
