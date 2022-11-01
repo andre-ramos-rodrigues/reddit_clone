@@ -49,7 +49,7 @@ function Header({}: Props) {
 
       <hr className="mt-2" />
 
-      <section className="flex items-center space-x-2 py-5">
+      <section className="flex items-center space-x-1 sm:space-x-2 py-5">
         <div className="h-16 w-16 sm:w-28 md:w-44 cursor-pointer flex-shrink-0">
           <Link href="/">
             <Image
@@ -74,7 +74,7 @@ function Header({}: Props) {
 
         <button className="hidden sm:inline bg-blue-600 text-white px-5 md:px-10 py-2 border-2 border-blue-600">Search</button>
         <Link href="/create">
-          <button className="border-2 border-blue-600 px-5 md:px-10 truncate py-2 hover:bg-blue-600/50 hover:text-white cursor-pointer">List Item</button>
+          <button className="border-2 border-blue-600 px-1 md:px-10 truncate py-2 hover:bg-blue-600/50 hover:text-white cursor-pointer">List Item</button>
         </Link>
         
       </section>
